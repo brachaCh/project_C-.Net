@@ -5,7 +5,8 @@ internal static class DataSource
 {
     internal static List<Customer?> customers = new List<Customer?>();
     internal static List<Product?> products = new List<Product?>();
-    internal static List<Sale?> sales = new List<Sale?>();
+    //internal static List<Sale?> sales = new List<Sale>();
+    internal static List<Sale> sales = new List<Sale>();
     internal static class Config
     {
         // a.שדה מספרי קבוע(const) בהרשאת internal

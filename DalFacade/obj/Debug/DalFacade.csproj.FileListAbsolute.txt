@@ -271,3 +271,16 @@ F:\‏‏תיקיה חדשה\-sheviDotNet2025_ן9900_5155\DalFacade\obj\Debug\Da
 F:\‏‏תיקיה חדשה\-sheviDotNet2025_ן9900_5155\DalFacade\obj\Debug\refint\DalFacade.dll
 F:\‏‏תיקיה חדשה\-sheviDotNet2025_ן9900_5155\DalFacade\obj\Debug\DalFacade.pdb
 F:\‏‏תיקיה חדשה\-sheviDotNet2025_ן9900_5155\DalFacade\obj\Debug\ref\DalFacade.dll
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\bin\DalFacade.deps.json
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\bin\DalFacade.dll
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\bin\DalFacade.pdb
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\DalFacade.csproj.AssemblyReference.cache
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\DalFacade.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\DalFacade.AssemblyInfoInputs.cache
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\DalFacade.AssemblyInfo.cs
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\DalFacade.csproj.CoreCompileInputs.cache
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\DalFacade.csproj.CopyComplete
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\DalFacade.dll
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\refint\DalFacade.dll
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\DalFacade.pdb
+C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\DalFacade\obj\Debug\ref\DalFacade.dll

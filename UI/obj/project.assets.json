@@ -111,11 +111,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\UI\\UI.csproj",
+      "projectUniqueName": "C:\\Users\\This User\\Desktop\\,תרגול בתכנות\\project_C-.Net\\UI\\UI.csproj",
       "projectName": "UI",
-      "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\UI\\UI.csproj",
+      "projectPath": "C:\\Users\\This User\\Desktop\\,תרגול בתכנות\\project_C-.Net\\UI\\UI.csproj",
       "packagesPath": "C:\\Users\\This User\\.nuget\\packages\\",
-      "outputPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\UI\\obj\\",
+      "outputPath": "C:\\Users\\This User\\Desktop\\,תרגול בתכנות\\project_C-.Net\\UI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -137,14 +137,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\BL\\BL.csproj": {
-              "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\BL\\BL.csproj"
+            "C:\\Users\\This User\\Desktop\\,תרגול בתכנות\\project_C-.Net\\BL\\BL.csproj": {
+              "projectPath": "C:\\Users\\This User\\Desktop\\,תרגול בתכנות\\project_C-.Net\\BL\\BL.csproj"
             },
-            "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalList\\DalList.csproj": {
-              "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalList\\DalList.csproj"
+            "C:\\Users\\This User\\Desktop\\,תרגול בתכנות\\project_C-.Net\\DalList\\DalList.csproj": {
+              "projectPath": "C:\\Users\\This User\\Desktop\\,תרגול בתכנות\\project_C-.Net\\DalList\\DalList.csproj"
             },
-            "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalXml\\DalXml.csproj": {
-              "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalXml\\DalXml.csproj"
+            "C:\\Users\\This User\\Desktop\\,תרגול בתכנות\\project_C-.Net\\DalXml\\DalXml.csproj": {
+              "projectPath": "C:\\Users\\This User\\Desktop\\,תרגול בתכנות\\project_C-.Net\\DalXml\\DalXml.csproj"
             }
           }
         }

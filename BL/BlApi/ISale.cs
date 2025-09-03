@@ -12,7 +12,9 @@ namespace BlApi
         int Create(Sale item);
         Sale? Read(int id);
         Sale? Read(Func<Sale, bool> filter);//stage2
-        List<Sale?> ReadAll(Func<Sale, bool>? filter = null);//stage2
+        //List<Sale?> ReadAll(Func<Sale, bool>? filter = null);//stage2
+        List<Sale> ReadAll(Func<Sale, bool>? filter = null);
+
         void Update(Sale item);
         void Delete(int id);
     }

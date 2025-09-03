@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -59,6 +60,7 @@ namespace UI
             {
                 dataGridView1.Visible = true;
                 dataGridView1.DataSource = sale_bi.Sale.ReadAll();
+       
                 ReadOneCustomer.Visible = true;
                 panel4.Visible = false;
                 panel5.Visible = false;
