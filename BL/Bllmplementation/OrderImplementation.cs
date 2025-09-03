@@ -151,8 +151,10 @@ namespace Bllmplementation
 
         public void CalcTotalPrice(BO.Order order)
         {
-            order.FinalPrice += (from product in order.ProductList
-                                 select product.Price).Sum();
+            //order.FinalPrice += (from product in order.ProductList
+            //                     select product.Price).Sum();
+            order.FinalPrice = order.ProductList.Sum(p => p.TotalPrice);
+
         }
 
 
@@ -199,9 +201,9 @@ namespace Bllmplementation
                 }
 
             }
-            catch
+            catch(Exception e) 
             {
-
+                throw new Exception("שגיאה בהזמנה", e);
             }
         }
 
@@ -218,7 +220,7 @@ namespace Bllmplementation
             }
             catch (Exception ex)
             {
-
+                throw new Exception("שגיאה בהזמנה", ex);
 
             }
         }

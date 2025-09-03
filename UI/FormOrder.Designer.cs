@@ -237,6 +237,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(292, 144);
             listBox1.TabIndex = 20;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // FormOrder
             // 

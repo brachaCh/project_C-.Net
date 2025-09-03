@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalFacade\\DalFacade.csproj",
+      "projectUniqueName": "C:\\Users\\This User\\Music\\projects\\-sheviDotNet2025_ן9900_5155\\DalFacade\\DalFacade.csproj",
       "projectName": "DalFacade",
-      "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalFacade\\DalFacade.csproj",
+      "projectPath": "C:\\Users\\This User\\Music\\projects\\-sheviDotNet2025_ן9900_5155\\DalFacade\\DalFacade.csproj",
       "packagesPath": "C:\\Users\\This User\\.nuget\\packages\\",
-      "outputPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalFacade\\obj\\",
+      "outputPath": "C:\\Users\\This User\\Music\\projects\\-sheviDotNet2025_ן9900_5155\\DalFacade\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -59,8 +59,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\Tools\\Tools.csproj": {
-              "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\Tools\\Tools.csproj"
+            "C:\\Users\\This User\\Music\\projects\\-sheviDotNet2025_ן9900_5155\\Tools\\Tools.csproj": {
+              "projectPath": "C:\\Users\\This User\\Music\\projects\\-sheviDotNet2025_ן9900_5155\\Tools\\Tools.csproj"
             }
           }
         }

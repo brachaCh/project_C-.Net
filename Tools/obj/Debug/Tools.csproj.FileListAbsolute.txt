@@ -208,3 +208,15 @@ F:\‏‏תיקיה חדשה\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\Tools.
 F:\‏‏תיקיה חדשה\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\refint\Tools.dll
 F:\‏‏תיקיה חדשה\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\Tools.pdb
 F:\‏‏תיקיה חדשה\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\ref\Tools.dll
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\bin\Tools.deps.json
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\bin\Tools.dll
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\bin\Tools.pdb
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\Tools.csproj.AssemblyReference.cache
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\Tools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\Tools.AssemblyInfoInputs.cache
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\Tools.AssemblyInfo.cs
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\Tools.csproj.CoreCompileInputs.cache
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\Tools.dll
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\refint\Tools.dll
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\Tools.pdb
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\Tools\obj\Debug\ref\Tools.dll
