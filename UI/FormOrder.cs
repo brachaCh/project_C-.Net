@@ -97,9 +97,6 @@
 //            //numericUpDownFinalPrice.Value =(decimal)(numericUpDownFinalPrice.Value)+ p.Price * (int.Parse(CountProductAddToOrder.Text));
 //            //dataSourceAllSales.DataSource = order.SearchSaleForProduct();
 
-
-
-
 //            //    if (comboBoxProducts.SelectedItem is BO.Product product)
 //            //    {
 //            //        try
@@ -235,11 +232,11 @@
 //}
 
 
-
 using BlApi;
 using BO;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace UI
@@ -256,20 +253,26 @@ namespace UI
         {
             InitializeComponent();
 
-            // קריאת רשימת מוצרים
-            //l = bl.Product.ReadAll();
-
-            //comboBoxProducts.DataSource = l;
-            //comboBoxProducts.DisplayMember = "Product_Name";
-            //comboBoxProducts.ValueMember = "Product_Id";
-
+            // קריאת כל המוצרים
             l = bl.Product.ReadAll().ToList();
+
+            // אם אין מוצרים – הודעה
+            if (l.Count == 0)
+            {
+                MessageBox.Show("אין מוצרים במערכת.");
+                return;
+            }
+
+            // הצגת רשימה בטבלה (DataGridView)
+            dataSourceAllProduct.AutoGenerateColumns = true;
+            dataSourceAllProduct.DataSource = l;
+
+            // הצגת רשימה ב-ComboBox
             comboBoxProducts.DataSource = l;
             comboBoxProducts.DisplayMember = "Product_Name";
             comboBoxProducts.ValueMember = "Product_Id";
 
-
-            // נחשוף את האזורים הנדרשים כבר בכניסה למסך
+            // החשיפה של הפקדים מהתחלה
             dataSourceAllProduct.Visible = true;
             dataSourceAllSales.Visible = true;
             dataSourceAllOrder.Visible = true;
@@ -287,51 +290,50 @@ namespace UI
 
         private void buttonAddToOrder_Click(object sender, EventArgs e)
         {
-            int productId = 0;
-            int amount = 0;
+            //int productId = 0;
+            //int amount = 0;
 
-            try
-            {
-                // נזהה לפי קוד מוצר אם הוזן, אחרת לפי ComboBox
-                if (!string.IsNullOrWhiteSpace(IdProductAddToOrder.Text))
-                {
-                    productId = int.Parse(IdProductAddToOrder.Text);
-                }
-                else if (comboBoxProducts.SelectedItem is BO.Product product)
-                {
-                    productId = product.Product_Id;
-                }
+            //try
+            //{
+            //    // לפי קוד מוצר או לפי בחירה
+            //    if (!string.IsNullOrWhiteSpace(IdProductAddToOrder.Text))
+            //    {
+            //        productId = int.Parse(IdProductAddToOrder.Text);
+            //    }
+            //    else if (comboBoxProducts.SelectedItem is BO.Product product)
+            //    {
+            //        productId = product.Product_Id;
+            //    }
 
-                amount = int.Parse(CountProductAddToOrder.Text);
+            //    amount = int.Parse(CountProductAddToOrder.Text);
+            //    p = bl.Product.Read(productId);
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //    return;
+            //}
 
-                p = bl.Product.Read(productId);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                return;
-            }
+            //if (amount <= 0)
+            //{
+            //    MessageBox.Show("אנא הזן כמות גדולה מ-0");
+            //    return;
+            //}
+            //if (p == null)
+            //{
+            //    MessageBox.Show("קוד מוצר לא קיים");
+            //    return;
+            //}
 
-            if (amount == 0)
-            {
-                MessageBox.Show("Please add quantity");
-                return;
-            }
-            if (p == null)
-            {
-                MessageBox.Show("Code does not exist");
-                return;
-            }
-
-            try
-            {
-                bl.Order.AddProductToOrder(order, productId, amount);
-                RefreshOrderView();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //try
+            //{
+            //    bl.Order.AddProductToOrder(order, productId, amount);
+            //    RefreshOrderView();
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
 
         private void RefreshOrderView()

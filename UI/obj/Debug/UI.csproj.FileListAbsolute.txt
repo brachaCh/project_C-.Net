@@ -186,3 +186,4 @@ C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\UI\obj\Debug\refi
 C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\UI\obj\Debug\UI.pdb
 C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\UI\obj\Debug\UI.genruntimeconfig.cache
 C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\UI\obj\Debug\ref\UI.dll
+C:\Users\This User\Music\projects\-sheviDotNet2025_ן9900_5155\UI\obj\Debug\UI.FormOrders.resources

@@ -34,15 +34,24 @@ namespace UI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            FormOrder formOrder = new FormOrder();
+            //FormOrder formOrder = new FormOrder();
+            //this.Hide();
+            //formOrder.FormClosed += FormOrder_FormClosed1;
+            //formOrder.Show();
+            FormOrders formOrders = new FormOrders();
             this.Hide();
-            formOrder.FormClosed += FormOrder_FormClosed1;
-            formOrder.Show();
+            formOrders.FormClosed += FormOrders_FormClosed;
+            formOrders.Show();
         }
 
-        private void FormOrder_FormClosed1(object? sender, FormClosedEventArgs e)
+        private void FormOrders_FormClosed(object? sender, FormClosedEventArgs e)
         {
             this.Show();
         }
+
+        //private void FormOrder_FormClosed1(object? sender, FormClosedEventArgs e)
+        //{
+        //    this.Show();
+        //}
     }
 }

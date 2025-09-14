@@ -100,7 +100,7 @@
             buttonAddToOrder.TabIndex = 4;
             buttonAddToOrder.Text = "להוספה";
             buttonAddToOrder.UseVisualStyleBackColor = true;
-            buttonAddToOrder.Click += button1_Click;
+            //buttonAddToOrder.Click += button1_Click;
             // 
             // label2
             // 
@@ -138,7 +138,7 @@
             label4.Size = new Size(112, 20);
             label4.TabIndex = 8;
             label4.Text = ":רשימת ההזמנה";
-            label4.Click += label4_Click;
+            //label4.Click += label4_Click;
             // 
             // CountProductAddToOrder
             // 
@@ -192,7 +192,7 @@
             buttonSubmitName.TabIndex = 15;
             buttonSubmitName.Text = "אישור";
             buttonSubmitName.UseVisualStyleBackColor = true;
-            buttonSubmitName.Click += buttonSubmitName_Click;
+            //buttonSubmitName.Click += buttonSubmitName_Click;
             // 
             // numericUpDownFinalPrice
             // 
@@ -210,7 +210,7 @@
             comboBoxProducts.Name = "comboBoxProducts";
             comboBoxProducts.Size = new Size(114, 28);
             comboBoxProducts.TabIndex = 17;
-            comboBoxProducts.SelectedIndexChanged += comboBoxProducts_SelectedIndexChanged;
+            //comboBoxProducts.SelectedIndexChanged += comboBoxProducts_SelectedIndexChanged;
             // 
             // label8
             // 
@@ -237,7 +237,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(292, 144);
             listBox1.TabIndex = 20;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            //listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // FormOrder
             // 
