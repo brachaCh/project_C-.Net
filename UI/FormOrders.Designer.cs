@@ -78,11 +78,11 @@
             // labelTotal
             // 
             labelTotal.AutoSize = true;
-            labelTotal.Location = new Point(502, 393);
+            labelTotal.Location = new Point(586, 392);
             labelTotal.Name = "labelTotal";
-            labelTotal.Size = new Size(50, 20);
+            labelTotal.Size = new Size(103, 20);
             labelTotal.TabIndex = 4;
-            labelTotal.Text = "label1";
+            labelTotal.Text = ":סה\"כ לתשלום";
             // 
             // FormOrders
             // 

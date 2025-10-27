@@ -146,37 +146,51 @@ namespace UI
         //        dataGridViewOrders.Rows.Add(id, name, price, quantityToAdd);
         //    }
         //}
-
         private void buttonAddProductToOrder_Click(object sender, EventArgs e)
         {
+            Product product = null;
+
+            // אם הוקלד קוד מוצר — נחפש אותו
             string inputId = textBoxProductCode.Text.Trim();
-
-            if (string.IsNullOrEmpty(inputId))
+            if (!string.IsNullOrEmpty(inputId))
             {
-                MessageBox.Show("הקלד קוד מוצר לחיפוש.");
-                return;
-            }
-
-            // חיפוש המוצר לפי הקוד
-            Product product = l.FirstOrDefault(p => p.Product_Id.ToString() == inputId);
-            if (product == null)
-            {
-                MessageBox.Show("לא נמצא מוצר עם הקוד הזה.");
-                return;
-            }
-
-            // סימון שורה מתאימה בטבלת המוצרים
-            foreach (DataGridViewRow row in dataGridViewAllProduct.Rows)
-            {
-                if (row.Cells[0].Value.ToString() == inputId)
+                product = l.FirstOrDefault(p => p.Product_Id.ToString() == inputId);
+                if (product == null)
                 {
-                    row.Selected = true;
-                    dataGridViewAllProduct.FirstDisplayedScrollingRowIndex = row.Index;
-                    break;
+                    MessageBox.Show("לא נמצא מוצר עם הקוד הזה.");
+                    return;
+                }
+
+                // סימון השורה המתאימה בטבלת המוצרים
+                foreach (DataGridViewRow row in dataGridViewAllProduct.Rows)
+                {
+                    if (row.Cells[0].Value.ToString() == inputId)
+                    {
+                        row.Selected = true;
+                        dataGridViewAllProduct.FirstDisplayedScrollingRowIndex = row.Index;
+                        break;
+                    }
                 }
             }
+            else
+            {
+                // אם לא הוקלד קוד — נשתמש בשורה שנבחרה
+                if (dataGridViewAllProduct.CurrentRow == null)
+                {
+                    MessageBox.Show("בחר מוצר מהרשימה או הקלד קוד מוצר.");
+                    return;
+                }
 
-            // --- פופאפ להזנת כמות ---
+                var selectedRow = dataGridViewAllProduct.CurrentRow;
+                product = new Product
+                {
+                    Product_Id = Convert.ToInt32(selectedRow.Cells[0].Value),
+                    Product_Name = selectedRow.Cells[1].Value.ToString(),
+                    Price = Convert.ToDouble(selectedRow.Cells[2].Value)
+                };
+            }
+
+            // פופאפ להזנת כמות
             NumericUpDown nud = new NumericUpDown
             {
                 Minimum = 1,
@@ -198,34 +212,41 @@ namespace UI
             };
 
             Label textLabel = new Label { Left = 20, Top = 20, Text = "כמה יחידות להוסיף?" };
-            Button confirmation = new Button { Text = "OK", Left = 80, Width = 80, Top = 60, DialogResult = DialogResult.OK };
+            Button confirmation = new Button { Text = "אישור", Left = 80, Width = 80, Top = 60, DialogResult = DialogResult.OK };
 
             prompt.Controls.Add(nud);
             prompt.Controls.Add(confirmation);
             prompt.Controls.Add(textLabel);
             prompt.AcceptButton = confirmation;
 
-            if (prompt.ShowDialog() != DialogResult.OK) return;
+            if (prompt.ShowDialog() != DialogResult.OK)
+                return;
 
             int quantityToAdd = (int)nud.Value;
 
-            // --- בדיקה אם המוצר כבר קיים בטבלת ההזמנה ---
+            // בדיקה אם המוצר כבר קיים בטבלת ההזמנה
             bool found = false;
             foreach (DataGridViewRow row in dataGridViewOrders.Rows)
             {
+                if (row.IsNewRow) continue;
                 if (row.Cells[0].Value != null && row.Cells[0].Value.ToString() == product.Product_Id.ToString())
                 {
                     int currentQty = Convert.ToInt32(row.Cells[3].Value);
-                    row.Cells[3].Value = currentQty + quantityToAdd; // עדכון כמות
+                    row.Cells[3].Value = currentQty + quantityToAdd;
+                    row.Cells[4].Value = product.Price * (currentQty + quantityToAdd);
                     found = true;
                     break;
                 }
             }
 
+            // אם המוצר לא נמצא — נוסיף שורה חדשה
             if (!found)
             {
                 dataGridViewOrders.Rows.Add(product.Product_Id, product.Product_Name, product.Price, quantityToAdd, product.Price * quantityToAdd);
             }
+
+            // ננקה את תיבת הקוד
+            textBoxProductCode.Clear();
 
             UpdateTotalPrice();
         }
