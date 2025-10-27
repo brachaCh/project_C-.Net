@@ -63,21 +63,37 @@ internal class Sale_Implementation : ISale
         LogManager.Exit();
         return sale;
     }
+    //public Sale? Read(int id)
+    //{
+    //    LogManager.Enter();
+    //    LogManager.WriteToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, "read sale");
+
+    //    Sale sale = DataSource.sales.FirstOrDefault(s => s.SaleId == id);
+    //    if (sale.SaleId != id)
+    //    {
+    //        LogManager.Exit();
+    //        throw new DalIdNotExistsException("The sale is not exists");
+    //    }
+    //    LogManager.WriteToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, "read sale");
+    //    LogManager.Exit();
+    //    return sale;
+       
+    //}
     public Sale? Read(int id)
     {
         LogManager.Enter();
         LogManager.WriteToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, "read sale");
 
-        Sale sale = DataSource.sales.FirstOrDefault(s => s.SaleId == id);
-        if (sale.SaleId != id)
+        Sale? sale = DataSource.sales.FirstOrDefault(s => s.SaleId == id);
+        if (sale == null) // <-- כאן התיקון
         {
             LogManager.Exit();
             throw new DalIdNotExistsException("The sale is not exists");
         }
+
         LogManager.WriteToLog(MethodBase.GetCurrentMethod().DeclaringType.FullName, MethodBase.GetCurrentMethod().Name, "read sale");
         LogManager.Exit();
         return sale;
-       
     }
     public List<Sale?> ReadAll(Func<Sale, bool> filter = null)
     {

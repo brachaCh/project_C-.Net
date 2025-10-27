@@ -189,3 +189,16 @@ C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\BL\obj\Debug\
 C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\BL\obj\Debug\refint\BL.dll
 C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\BL\obj\Debug\BL.pdb
 C:\Users\This User\Desktop\,תרגול בתכנות\project_C-.Net\BL\obj\Debug\ref\BL.dll
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\bin\BL.deps.json
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\bin\BL.dll
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\bin\BL.pdb
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\BL.csproj.AssemblyReference.cache
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\BL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\BL.AssemblyInfoInputs.cache
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\BL.AssemblyInfo.cs
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\BL.dll
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\refint\BL.dll
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\BL.pdb
+C:\Users\This User\Videos\פרקטיקום\c# של ברכי\project_C-.Net\BL\obj\Debug\ref\BL.dll

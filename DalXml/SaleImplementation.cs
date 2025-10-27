@@ -114,7 +114,9 @@ internal class SaleImplementation : ISale
         {
             serializer.Serialize(sw, list);
         }
-        return item.ProductId;
+        //return item.SaleId;
+        return code;
+        //return item.ProductId;
     }
 
     public void Delete(int id)
@@ -142,7 +144,8 @@ internal class SaleImplementation : ISale
         {
             list = serializer.Deserialize(sr) as List<Sale>;
         }
-        return list.FirstOrDefault(s => s.ProductId == id);
+        //return list.FirstOrDefault(s => s.ProductId == id);
+        return list.FirstOrDefault(s => s.SaleId == id);
     }
 
     public Sale? Read(Func<Sale, bool>? filter)
