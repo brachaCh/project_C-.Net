@@ -126,4 +126,22 @@
     <Count_Sale>15</Count_Sale>
     <Date_End_Sale>2025-11-03T22:41:22</Date_End_Sale>
   </Sale>
+  <Sale>
+    <SaleId>340</SaleId>
+    <ProductId>113</ProductId>
+    <Price_Sale>60</Price_Sale>
+    <If_All_Customers>true</If_All_Customers>
+    <Date_Start_Sale>2025-10-27T00:00:00</Date_Start_Sale>
+    <Count_Sale>14</Count_Sale>
+    <Date_End_Sale>2025-11-03T00:00:00</Date_End_Sale>
+  </Sale>
+  <Sale>
+    <SaleId>350</SaleId>
+    <ProductId>102</ProductId>
+    <Price_Sale>20</Price_Sale>
+    <If_All_Customers>true</If_All_Customers>
+    <Date_Start_Sale>2025-10-27T00:00:00</Date_Start_Sale>
+    <Count_Sale>2</Count_Sale>
+    <Date_End_Sale>2025-11-03T00:00:00</Date_End_Sale>
+  </Sale>
 </ArrayOfSale>
