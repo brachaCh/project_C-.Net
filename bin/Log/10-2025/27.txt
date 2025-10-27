@@ -1,1 +1,1 @@
-27/10/2025 22:21:53	Bllmplementation.SaleImplementation.Read:	Read 210 Sale
+27/10/2025 22:41:38	Bllmplementation.SaleImplementation.Create:	Create name: SaleId          value 0               name: ProductId       value 113             name: Price_Sale      value 50              name: If_All_Customers value True            name: Date_Start_Sale value 27/10/2025 22:41:15 name: Count_Sale      value 15              name: Date_End_Sale   value 03/11/2025 22:41:22  Sale

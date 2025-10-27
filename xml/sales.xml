@@ -117,4 +117,13 @@
     <Count_Sale>10</Count_Sale>
     <Date_End_Sale>2025-06-24T00:00:00</Date_End_Sale>
   </Sale>
+  <Sale>
+    <SaleId>330</SaleId>
+    <ProductId>113</ProductId>
+    <Price_Sale>50</Price_Sale>
+    <If_All_Customers>true</If_All_Customers>
+    <Date_Start_Sale>2025-10-27T22:41:15</Date_Start_Sale>
+    <Count_Sale>15</Count_Sale>
+    <Date_End_Sale>2025-11-03T22:41:22</Date_End_Sale>
+  </Sale>
 </ArrayOfSale>

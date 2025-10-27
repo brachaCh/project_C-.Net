@@ -124,7 +124,7 @@ namespace UI
         {
             try
             {
-                sale = new Sale(0, int.Parse(textBox2.Text), int.Parse(numericUpDown3.Text), checkBox2.Checked, DateTime.Parse(dateTimePicker2.Text), int.Parse(numericUpDown1.Text), DateTime.Parse(dateTimePicker3.Text));
+                sale = new Sale(0, int.Parse(textBox2.Text), int.Parse(numericUpDown3.Text), checkBox2.Checked, DateTime.Parse(dateTimePicker2.Value.ToString()), int.Parse(numericUpDown1.Text), DateTime.Parse(dateTimePicker3.Value.ToString()));
                 sale_bi.Sale.Create(sale);
                 AddPanel.Visible = false;
                 dataGridView1.DataSource = sale_bi.Sale.ReadAll();
