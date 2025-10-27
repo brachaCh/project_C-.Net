@@ -91,11 +91,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalTest\\DalTest.csproj",
+      "projectUniqueName": "C:\\Users\\This User\\Videos\\פרקטיקום\\c# של ברכי\\project_C-.Net\\DalTest\\DalTest.csproj",
       "projectName": "DalTest",
-      "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalTest\\DalTest.csproj",
+      "projectPath": "C:\\Users\\This User\\Videos\\פרקטיקום\\c# של ברכי\\project_C-.Net\\DalTest\\DalTest.csproj",
       "packagesPath": "C:\\Users\\This User\\.nuget\\packages\\",
-      "outputPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalTest\\obj\\",
+      "outputPath": "C:\\Users\\This User\\Videos\\פרקטיקום\\c# של ברכי\\project_C-.Net\\DalTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -117,14 +117,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalFacade\\DalFacade.csproj": {
-              "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalFacade\\DalFacade.csproj"
+            "C:\\Users\\This User\\Videos\\פרקטיקום\\c# של ברכי\\project_C-.Net\\DalFacade\\DalFacade.csproj": {
+              "projectPath": "C:\\Users\\This User\\Videos\\פרקטיקום\\c# של ברכי\\project_C-.Net\\DalFacade\\DalFacade.csproj"
             },
-            "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalXml\\DalXml.csproj": {
-              "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\DalXml\\DalXml.csproj"
+            "C:\\Users\\This User\\Videos\\פרקטיקום\\c# של ברכי\\project_C-.Net\\DalXml\\DalXml.csproj": {
+              "projectPath": "C:\\Users\\This User\\Videos\\פרקטיקום\\c# של ברכי\\project_C-.Net\\DalXml\\DalXml.csproj"
             },
-            "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\Tools\\Tools.csproj": {
-              "projectPath": "F:\\‏‏תיקיה חדשה\\-sheviDotNet2025_ן9900_5155\\Tools\\Tools.csproj"
+            "C:\\Users\\This User\\Videos\\פרקטיקום\\c# של ברכי\\project_C-.Net\\Tools\\Tools.csproj": {
+              "projectPath": "C:\\Users\\This User\\Videos\\פרקטיקום\\c# של ברכי\\project_C-.Net\\Tools\\Tools.csproj"
             }
           }
         }
