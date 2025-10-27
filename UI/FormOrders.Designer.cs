@@ -31,11 +31,10 @@
             dataGridViewAllProduct = new DataGridView();
             buttonAddProductToOrder = new Button();
             dataGridViewOrders = new DataGridView();
+            textBoxProductCode = new TextBox();
             labelTotal = new Label();
-            NumericUpDown = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)dataGridViewAllProduct).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewOrders).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)NumericUpDown).BeginInit();
             SuspendLayout();
             // 
             // dataGridViewAllProduct
@@ -50,7 +49,7 @@
             // 
             // buttonAddProductToOrder
             // 
-            buttonAddProductToOrder.Location = new Point(131, 394);
+            buttonAddProductToOrder.Location = new Point(45, 392);
             buttonAddProductToOrder.Name = "buttonAddProductToOrder";
             buttonAddProductToOrder.Size = new Size(168, 29);
             buttonAddProductToOrder.TabIndex = 1;
@@ -68,29 +67,30 @@
             dataGridViewOrders.Size = new Size(315, 336);
             dataGridViewOrders.TabIndex = 2;
             // 
+            // textBoxProductCode
+            // 
+            textBoxProductCode.Location = new Point(296, 396);
+            textBoxProductCode.Name = "textBoxProductCode";
+            textBoxProductCode.Size = new Size(125, 27);
+            textBoxProductCode.TabIndex = 3;
+            textBoxProductCode.TextChanged += textBox1_TextChanged;
+            // 
             // labelTotal
             // 
             labelTotal.AutoSize = true;
-            labelTotal.Location = new Point(596, 401);
+            labelTotal.Location = new Point(502, 393);
             labelTotal.Name = "labelTotal";
             labelTotal.Size = new Size(50, 20);
-            labelTotal.TabIndex = 3;
+            labelTotal.TabIndex = 4;
             labelTotal.Text = "label1";
-            // 
-            // NumericUpDown
-            // 
-            NumericUpDown.Location = new Point(321, 396);
-            NumericUpDown.Name = "NumericUpDown";
-            NumericUpDown.Size = new Size(150, 27);
-            NumericUpDown.TabIndex = 4;
             // 
             // FormOrders
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(NumericUpDown);
             Controls.Add(labelTotal);
+            Controls.Add(textBoxProductCode);
             Controls.Add(dataGridViewOrders);
             Controls.Add(buttonAddProductToOrder);
             Controls.Add(dataGridViewAllProduct);
@@ -98,7 +98,6 @@
             Text = "FormOrders";
             ((System.ComponentModel.ISupportInitialize)dataGridViewAllProduct).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewOrders).EndInit();
-            ((System.ComponentModel.ISupportInitialize)NumericUpDown).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -108,7 +107,7 @@
         private DataGridView dataGridViewAllProduct;
         private Button buttonAddProductToOrder;
         private DataGridView dataGridViewOrders;
+        private TextBox textBoxProductCode;
         private Label labelTotal;
-        private NumericUpDown NumericUpDown;
     }
 }
